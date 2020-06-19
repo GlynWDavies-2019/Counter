@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+/* Variables */
+
+:root {
+    --color-alabaster: #E0DFD5;
+    --color-black: #000000;
+    --color-fire-opal: #EF6461;
+    --color-onyx: #313638;
+    --color-platinum: #E8E9EB;
+    --color-sunray: #E4B363;
+    --color-white: #FFFFFF;
+}
+
 /* Reset */
 
 *,
@@ -15,5 +27,50 @@
 /* Core Styles */
 
 body {
+    background-color: var(--color-alabaster);
+    color: var(--color-onyx);
     font-family: 'Nunito', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--color-onyx);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    color: var(--color-onyx);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin: 0.5rem;
+    outline: none;
+    padding: 0.375rem 0.75rem;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    background-color: var(--color-onyx);
+    color: var(--color-alabaster);
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+#value {
+    font-size: 6rem;
+    font-weight: bold;
 }
